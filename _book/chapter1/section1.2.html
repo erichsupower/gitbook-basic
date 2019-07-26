@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Section1.2 · GitBook</title>
+        <title>npm 指令 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -94,7 +94,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Gitbook 基本部屬測試
             
                 </a>
             
@@ -107,7 +107,7 @@
                 <a href="./">
             
                     
-                    Chapter1
+                    指令測試
             
                 </a>
             
@@ -121,7 +121,7 @@
                 <a href="section1.1.html">
             
                     
-                    Section1.1
+                    Terminal 及常用指令
             
                 </a>
             
@@ -134,7 +134,7 @@
                 <a href="section1.2.html">
             
                     
-                    Section1.2
+                    npm 指令
             
                 </a>
             
@@ -152,11 +152,30 @@
                 <a href="../chapter2/">
             
                     
-                    Chapter2
+                    Markdown
             
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/section1.2.md">
+            
+                <span>
+            
+                    
+                    Markdown Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -190,7 +209,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Section1.2</a>
+        <a href=".." >npm 指令</a>
     </h1>
 </div>
 
@@ -205,8 +224,114 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="section12">Section1.2</h1>
-
+                                <h1 id="npm-&#x6307;&#x4EE4;">npm &#x6307;&#x4EE4;</h1>
+<p>Node Package Manager
+Node &#x6A21;&#x7D44;&#x5957;&#x4EF6;&#x7BA1;&#x7406;&#x5668;</p>
+<p><a href="https://www.eebreakdown.com/2016/09/npm.html" target="_blank">npm &#x5E38;&#x7528;&#x547D;&#x4EE4;&#x6307;&#x5357;&#x50B3;&#x9001;&#x9580;</a></p>
+<h2 id="&#x7248;&#x672C;&#x865F;&#x78BC;--v">&#x7248;&#x672C;&#x865F;&#x78BC; <code>-v</code></h2>
+<h6 id="&#x5370;&#x51FA;&#x7248;&#x672C;&#x8CC7;&#x8A0A;">&#x5370;&#x51FA;&#x7248;&#x672C;&#x8CC7;&#x8A0A;</h6>
+<pre><code>npm -v 
+</code></pre><h2 id="&#x5C08;&#x6848;&#x521D;&#x59CB;&#x5316;-init">&#x5C08;&#x6848;&#x521D;&#x59CB;&#x5316; <code>init</code></h2>
+<h6 id="&#x5B89;&#x88DD;&#x81EA;&#x5B9A;&#x8CC7;&#x8A0A;">&#x5B89;&#x88DD;&#x81EA;&#x5B9A;&#x8CC7;&#x8A0A;</h6>
+<pre><code>npm init
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x9810;&#x8A2D;&#x8CC7;&#x8A0A;">&#x5B89;&#x88DD;&#x9810;&#x8A2D;&#x8CC7;&#x8A0A;</h6>
+<pre><code>npm init -y
+</code></pre><ul>
+<li>name: &#x5C08;&#x6848;&#x540D;&#x7A31;&#xFF0C;&#x9810;&#x8A2D;&#x662F;&#x5C08;&#x6848;&#x76EE;&#x9304;&#x540D;</li>
+<li>description: &#x5C08;&#x6848;&#x63CF;&#x8FF0;</li>
+<li>entry point: &#x5C08;&#x6848;&#x5207;&#x5165;&#x9EDE;</li>
+<li>test command: &#x5C08;&#x6848;&#x6E2C;&#x8A66;&#x6307;&#x4EE4;</li>
+<li>git repository: &#x539F;&#x59CB;&#x78BC;&#x7248;&#x672C;&#x63A7;&#x7BA1;&#x4F4D;&#x7F6E;</li>
+<li>keywoard: &#x5C08;&#x6848;&#x95DC;&#x9375;&#x5B57;</li>
+<li>author: &#x5C08;&#x6848;&#x4F5C;&#x8005;&#xFF0C;&#x4EE5; author-name <a href="mailto:author@email.com" target="_blank">author@email.com</a> &#x5BEB;&#x4E4B;</li>
+<li>license: &#x5C08;&#x6848;&#x7248;&#x6B0A;</li>
+</ul>
+<h2 id="packagejson-exsample">package.json exsample</h2>
+<pre><code>{
+  &quot;name&quot;: &quot;gulp_sass&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;description content&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;https://github.com&quot;
+  },
+  &quot;author&quot;: &quot;Eric Hsu&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;devDependencies&quot;: {}
+}
+</code></pre><h2 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;-install">&#x5B89;&#x88DD;&#x5957;&#x4EF6; install</h2>
+<h6 id="&#x4F9D;-packagejson-&#x5167;&#x7684;&#x914D;&#x7F6E;&#x6A94;&#x7D00;&#x9304;&#x81EA;&#x52D5;&#x5B89;&#x88DD;">&#x4F9D; package.json &#x5167;&#x7684;&#x914D;&#x7F6E;&#x6A94;&#x7D00;&#x9304;&#x81EA;&#x52D5;&#x5B89;&#x88DD;</h6>
+<pre><code>npm install
+</code></pre><h6 id="&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x4E0D;&#x5B89;&#x88DD;-devdependencies-&#x7684;&#x6A21;&#x7D44;">&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x4E0D;&#x5B89;&#x88DD; &#x201C;devDependencies&#x201D; &#x7684;&#x6A21;&#x7D44;</h6>
+<pre><code>npm install --production
+</code></pre><h6 id="&#x82E5;&#x5DF2;&#x5B89;&#x88DD;-devdependencies&#xFF0C;&#x53EF;&#x4E8B;&#x5F8C;&#x79FB;&#x9664;">&#x82E5;&#x5DF2;&#x5B89;&#x88DD; devDependencies&#xFF0C;&#x53EF;&#x4E8B;&#x5F8C;&#x79FB;&#x9664;</h6>
+<pre><code>npm prune --production
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;">&#x5B89;&#x88DD;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;</h6>
+<pre><code>npm install {package name} -g
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x5957;&#x4EF6;">&#x5B89;&#x88DD;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x5957;&#x4EF6;</h6>
+<pre><code>npm install {package name}
+npm i {package name}
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x4E26;&#x81EA;&#x52D5;&#x5BEB;&#x5165;-packagejson-&#x7684;-dependencies">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x4E26;&#x81EA;&#x52D5;&#x5BEB;&#x5165; package.json &#x7684; &#x201C;dependencies&#x201D;</h6>
+<pre><code>npm install {package name} --save
+npm install {package name} -S
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x4E26;&#x81EA;&#x52D5;&#x5BEB;&#x5165;-packagejson-&#x7684;-devdependencies">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x4E26;&#x81EA;&#x52D5;&#x5BEB;&#x5165; package.json &#x7684; &#x201C;devDependencies&quot;</h6>
+<pre><code>npm install {package name} --save-dev
+npm install {package name} -D
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x7684;&#x6700;&#x5F8C;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x642D;&#x914D;--s-&#x6216;--d">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x7684;&#x6700;&#x5F8C;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x642D;&#x914D; -S &#x6216; -D</h6>
+<pre><code>npm install {package name}@lastest
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x7684;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x642D;&#x914D;--s-&#x6216;--d">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x7684;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x642D;&#x914D; -S &#x6216; -D</h6>
+<pre><code>npm install {package name}@1.2.2
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x7684;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x642D;&#x914D;--s-&#x6216;--d">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x7684;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x642D;&#x914D; -S &#x6216; -D</h6>
+<pre><code>npm install {package name}@&quot;&gt;=1.2.2&quot;
+</code></pre><h6 id="&#x5B89;&#x88DD;-tagged-&#x5957;&#x4EF6;&#xFF0C;&#x53EF;&#x642D;&#x914D;--s-&#x6216;--d">&#x5B89;&#x88DD; tagged &#x5957;&#x4EF6;&#xFF0C;&#x53EF;&#x642D;&#x914D; -S &#x6216; -D</h6>
+<pre><code>npm install {package name}@stable
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x81F3;&#x81EA;&#x5B9A;&#x76EE;&#x9304;&#xFF0C;&#x9810;&#x8A2D;&#x70BA;&#x76EE;&#x9304;-nodemodules">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#x81F3;&#x81EA;&#x5B9A;&#x76EE;&#x9304;&#xFF0C;&#x9810;&#x8A2D;&#x70BA;&#x76EE;&#x9304; ./node_modules</h6>
+<pre><code>npm install {package name} --prefix./path/to/here 
+</code></pre><h6 id="&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#xFF0C;&#x4E26;&#x5728;&#x5BEB;&#x5165;-packagejson-&#x6642;&#xFF0C;&#x9396;&#x5B9A;&#x7248;&#x672C;&#x865F;&#x3002;&#x9019;&#x6A23;&#x5728;&#x57F7;&#x884C;-npm-update-&#x6642;&#xFF0C;&#x8A72;&#x5957;&#x4EF6;&#x7684;&#x7248;&#x672C;&#x5C31;&#x4E0D;&#x6703;&#x88AB;&#x5347;&#x7D1A;">&#x5B89;&#x88DD;&#x5957;&#x4EF6;&#xFF0C;&#x4E26;&#x5728;&#x5BEB;&#x5165; package.json &#x6642;&#xFF0C;&#x9396;&#x5B9A;&#x7248;&#x672C;&#x865F;&#x3002;&#x9019;&#x6A23;&#x5728;&#x57F7;&#x884C; npm update &#x6642;&#xFF0C;&#x8A72;&#x5957;&#x4EF6;&#x7684;&#x7248;&#x672C;&#x5C31;&#x4E0D;&#x6703;&#x88AB;&#x5347;&#x7D1A;</h6>
+<pre><code>npm install {package name} --save --save-exact
+npm install {package name} --save-dev --save-exact
+npm install {package name}@1.2.2 --save --save-exact
+</code></pre><h2 id="&#x79FB;&#x9664;&#x5957;&#x4EF6;-uninstall">&#x79FB;&#x9664;&#x5957;&#x4EF6; uninstall</h2>
+<h6 id="&#x79FB;&#x9664;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;">&#x79FB;&#x9664;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;</h6>
+<pre><code>npm uninstall {package name} -g
+</code></pre><h6 id="&#x79FB;&#x9664;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x5957;&#x4EF6;">&#x79FB;&#x9664;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x5957;&#x4EF6;</h6>
+<pre><code>npm uninstall {package name} 
+</code></pre><h2 id="&#x79FB;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x5957;&#x4EF6;-prune">&#x79FB;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x5957;&#x4EF6; prune</h2>
+<h6 id="&#x52A0;-&#x2014;production&#xFF0C;&#x6703;&#x79FB;&#x9664;-devdependencies-&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5957;&#x4EF6;">&#x52A0; &#x2014;production&#xFF0C;&#x6703;&#x79FB;&#x9664; &quot;devDependencies&quot; &#x4E2D;&#x7684;&#x6240;&#x6709;&#x5957;&#x4EF6;</h6>
+<pre><code>npm prune [--production] 
+</code></pre><h2 id="&#x641C;&#x5C0B;&#x5957;&#x4EF6;-search">&#x641C;&#x5C0B;&#x5957;&#x4EF6; search</h2>
+<pre><code>npm search {package name}
+</code></pre><h2 id="&#x5217;&#x51FA;&#x5957;&#x4EF6;-ls">&#x5217;&#x51FA;&#x5957;&#x4EF6; ls</h2>
+<h6 id="&#x5217;&#x51FA;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;">&#x5217;&#x51FA;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;</h6>
+<pre><code>npm ls -g
+</code></pre><h6 id="&#x5217;&#x51FA;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x5957;&#x4EF6;">&#x5217;&#x51FA;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x5957;&#x4EF6;</h6>
+<pre><code>npm ls
+</code></pre><h6 id="&#x5217;&#x51FA;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x5957;&#x4EF6;">&#x5217;&#x51FA;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x5957;&#x4EF6;</h6>
+<pre><code>npm list
+</code></pre><h2 id="&#x6AA2;&#x67E5;&#x6A21;&#x7D44;&#x662F;&#x5426;&#x975E;&#x6700;&#x65B0;&#x7248;&#x672C;-outdated">&#x6AA2;&#x67E5;&#x6A21;&#x7D44;&#x662F;&#x5426;&#x975E;&#x6700;&#x65B0;&#x7248;&#x672C; outdated</h2>
+<h6 id="&#x6AA2;&#x67E5;&#x5C08;&#x6848;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x7D44;&#x662F;&#x5426;&#x6709;&#x904E;&#x671F;&#x8005;&#x975E;&#x6700;&#x65B0;&#x7248;&#x672C;">&#x6AA2;&#x67E5;&#x5C08;&#x6848;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x7D44;&#x662F;&#x5426;&#x6709;&#x904E;&#x671F;&#x8005;(&#x975E;&#x6700;&#x65B0;&#x7248;&#x672C;)</h6>
+<pre><code>npm outdated
+</code></pre><h2 id="&#x66F4;&#x65B0;&#x5957;&#x4EF6;-update">&#x66F4;&#x65B0;&#x5957;&#x4EF6; update</h2>
+<h6 id="&#x66F4;&#x65B0;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;">&#x66F4;&#x65B0;&#x5168;&#x57DF;&#x4E2D;&#x7684;&#x5957;&#x4EF6;</h6>
+<pre><code>npm update -g 
+</code></pre><h6 id="&#x66F4;&#x65B0;&#x5C08;&#x6848;&#x4E2D;&#x5957;&#x4EF6;">&#x66F4;&#x65B0;&#x5C08;&#x6848;&#x4E2D;&#x5957;&#x4EF6;</h6>
+<pre><code>npm update
+</code></pre><h6 id="&#x53EA;&#x66F4;&#x65B0;&#x67D0;&#x500B;&#x5957;&#x4EF6;package">&#x53EA;&#x66F4;&#x65B0;&#x67D0;&#x500B;&#x5957;&#x4EF6;(package)</h6>
+<pre><code>npm update {package name} 
+</code></pre><h2 id="&#x65B0;&#x589E;-npm-&#x5E33;&#x865F;-adduser">&#x65B0;&#x589E; npm &#x5E33;&#x865F; adduser</h2>
+<pre><code>npm adduser
+</code></pre><h2 id="&#x767B;&#x5165;-npm-&#x5E33;&#x865F;-login">&#x767B;&#x5165; npm &#x5E33;&#x865F; login</h2>
+<pre><code>npm login
+</code></pre><h2 id="&#x91CD;&#x65B0;&#x5EFA;&#x7F6E;&#x5C08;&#x6848;-rebuild">&#x91CD;&#x65B0;&#x5EFA;&#x7F6E;&#x5C08;&#x6848; rebuild</h2>
+<pre><code>npm rebuild
+</code></pre><h2 id="&#x6253;&#x5305;&#x5C08;&#x6848;-pack">&#x6253;&#x5305;&#x5C08;&#x6848; pack</h2>
+<pre><code>npm pack
+</code></pre>
                                 
                                 </section>
                             
@@ -233,12 +358,12 @@
 
             
                 
-                <a href="section1.1.html" class="navigation navigation-prev " aria-label="Previous page: Section1.1">
+                <a href="section1.1.html" class="navigation navigation-prev " aria-label="Previous page: Terminal 及常用指令">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter2/" class="navigation navigation-next " aria-label="Next page: Chapter2">
+                <a href="../chapter2/" class="navigation navigation-next " aria-label="Next page: Markdown">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -249,7 +374,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section1.2","level":"1.2.2","depth":2,"next":{"title":"Chapter2","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[]},"previous":{"title":"Section1.1","level":"1.2.1","depth":2,"path":"chapter1/section1.1.md","ref":"chapter1/section1.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section1.2.md","mtime":"2019-07-26T02:42:45.702Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-26T03:14:43.443Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"npm 指令","level":"1.2.2","depth":2,"next":{"title":"Markdown","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[{"title":"Markdown Syntax","level":"1.3.1","depth":2,"path":"chapter2/section1.2.md","ref":"chapter2/section1.2.md","articles":[]}]},"previous":{"title":"Terminal 及常用指令","level":"1.2.1","depth":2,"path":"chapter1/section1.1.md","ref":"chapter1/section1.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section1.2.md","mtime":"2019-07-26T05:49:03.154Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-26T05:54:36.827Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -257,10 +382,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

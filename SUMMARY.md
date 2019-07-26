@@ -1,8 +1,8 @@
 # Summary
 
-* [Introduction](README.md)
-* [Chapter1](chapter1/README.md)
-    * [Section1.1](chapter1/section1.1.md)
-    * [Section1.2](chapter1/section1.2.md)
-* [Chapter2](chapter2/README.md)
-
+* [Gitbook 基本部屬測試](README.md)
+* [指令測試](chapter1/README.md)
+    * [Terminal 及常用指令](chapter1/section1.1.md)
+    * [npm 指令](chapter1/section1.2.md)
+* [Markdown](chapter2/README.md)
+    * [Markdown Syntax](chapter2/section1.2.md)
