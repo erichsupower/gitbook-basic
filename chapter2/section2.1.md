@@ -1,126 +1,153 @@
-# Markdown Syntax
+# npm 指令
+Node Package Manager
+Node 模組套件管理器
 
-[線上 Markdown 資源文件](https://markdown.tw/)
+[npm 常用命令指南傳送門](https://www.eebreakdown.com/2016/09/npm.html)
 
-This is an H1
-=============
+## 版本號碼 `-v`
 
-This is an H2
--------------
+###### 印出版本資訊
+    npm -v 
 
-# This is an H1
-## This is an H2
-### This is an H3
-#### This is an H4
-##### This is an H5
-###### This is an H6
+## 專案初始化 `init`
 
-## 區塊引言
+###### 安裝自定資訊
+    npm init
 
-> 區塊引言
-> 區塊引言
-> > 區塊引言
+###### 安裝預設資訊
+    npm init -y
 
-> 區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言
+* name: 專案名稱，預設是專案目錄名
+* description: 專案描述
+* entry point: 專案切入點
+* test command: 專案測試指令
+* git repository: 原始碼版本控管位置
+* keywoard: 專案關鍵字
+* author: 專案作者，以 author-name <author@email.com> 寫之
+* license: 專案版權
 
-> 區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言區塊引言
+## package.json exsample
 
-## 清單
-
-*   無序清單使用星號、加號或是減號作為清單標記
-*   無序清單使用星號、加號或是減號作為清單標記
-*   無序清單使用星號、加號或是減號作為清單標記
-
-+   無序清單使用星號、加號或是減號作為清單標記
-+   無序清單使用星號、加號或是減號作為清單標記
-+   無序清單使用星號、加號或是減號作為清單標記
-
--   無序清單使用星號、加號或是減號作為清單標記
--   無序清單使用星號、加號或是減號作為清單標記
--   無序清單使用星號、加號或是減號作為清單標記
-
-1.  有序清單則使用數字接著一個英文句點
-2.  有序清單則使用數字接著一個英文句點
-3.  有序清單則使用數字接著一個英文句點
-
-## 分隔線
-
-* * *
-***
-*****
-- - -
----
----------------------------------------
-
-## 程式碼區塊
-
-    This is a code block.
-    This is a code block.
-    This is a code block.
-    
 ```
-This is a code block.
-This is a code block.
-This is a code block.
+{
+  "name": "gulp_sass",
+  "version": "1.0.0",
+  "description": "description content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "author": "Eric Hsu",
+  "license": "ISC",
+  "devDependencies": {}
+}
 ```
+
+## 安裝套件 install
+
+
+###### 依 package.json 內的配置檔紀錄自動安裝 
+    npm install
+
+###### 同上，但不安裝 “devDependencies” 的模組
+    npm install --production
+
+###### 若已安裝 devDependencies，可事後移除
+    npm prune --production
+
+###### 安裝全域中的套件
+    npm install {package name} -g
+
+###### 安裝專案中的套件
+    npm install {package name}
+    npm i {package name}
+
+###### 安裝套件並自動寫入 package.json 的 “dependencies”
+    npm install {package name} --save
+    npm install {package name} -S
+
+###### 安裝套件並自動寫入 package.json 的 “devDependencies"
+    npm install {package name} --save-dev
+    npm install {package name} -D
+
+###### 安裝套件的最後版本，可搭配 -S 或 -D
+    npm install {package name}@lastest
+
+###### 安裝套件的特定版本，可搭配 -S 或 -D
+    npm install {package name}@1.2.2
+
+###### 安裝套件的特定版本，可搭配 -S 或 -D
+    npm install {package name}@">=1.2.2"
+
+###### 安裝 tagged 套件，可搭配 -S 或 -D
+    npm install {package name}@stable
+
+###### 安裝套件至自定目錄，預設為目錄 ./node_modules
+    npm install {package name} --prefix./path/to/here 
+
+###### 安裝套件，並在寫入 package.json 時，鎖定版本號。這樣在執行 npm update 時，該套件的版本就不會被升級
+    npm install {package name} --save --save-exact
+    npm install {package name} --save-dev --save-exact
+    npm install {package name}@1.2.2 --save --save-exact
+
+
+## 移除套件 uninstall
+
+###### 移除全域中的套件
+    npm uninstall {package name} -g
+
+###### 移除專案中的套件
+    npm uninstall {package name} 
+
+
+## 移除不需要套件 prune
+
+###### 加 —production，會移除 "devDependencies" 中的所有套件
+    npm prune [--production] 
+
+## 搜尋套件 search
+    npm search {package name}
+
+## 列出套件 ls
+
+###### 列出全域中的套件
+    npm ls -g
     
-## 程式碼
+    
+###### 列出專案中的使用套件
+    npm ls
+    
+###### 列出專案中的使用套件
+    npm list
 
-Use the `printf()` function.
+## 檢查模組是否非最新版本 outdated
+###### 檢查專案所使用的模組是否有過期者(非最新版本)
+    npm outdated
 
-``There is a literal backtick (`) here.``
+## 更新套件 update
 
-`&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+###### 更新全域中的套件
+    npm update -g 
+    
+######  更新專案中套件
+    npm update
 
-## 連結
+######  只更新某個套件(package)
+    npm update {package name} 
 
-###### Markdown 支援兩種形式的連結語法：行內和參考兩種形式。
-This is [an example](http://example.com/ "Title") inline link.
-[This link](http://example.net/) has no title attribute.
+## 新增 npm 帳號 adduser
+    npm adduser
 
-###### 如果你是要連結到同樣主機的資源，你可以使用相對路徑：
-See my [About](/about/) page for details.  
+## 登入 npm 帳號 login
+    npm login
 
-###### 參考形式的連結使用另外一個方括號接在連結文字的括號後面，而在第二個方括號裡面要填入用以辨識連結的標籤：
-This is [an example] [id] reference-style link.
+## 重新建置專案 rebuild
+    npm rebuild
 
-[id]: http://example.com/  "Optional Title Here"
-
-下面這三種連結的定義都是相同：
-[foo]: http://example.com/  "Optional Title Here"
-[foo]: http://example.com/  'Optional Title Here'
-[foo]: http://example.com/  (Optional Title Here)
-
-###### 簡短的自動連結形式來處理網址和電子郵件信箱：
-<http://example.com/>
-<address@example.com>
-
-## 強調
-
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-
-## 圖片
-
-![Alt text](https://markdown.tw/images/208x128.png)
-
-![Alt text](https://markdown.tw/images/208x128.png "Optional title")
-
-![Alt text][idImage]
-
-[idImage]:https://markdown.tw/images/208x128.png
-
-## 跳脫字元
-
-###### 利用反斜線來插入一些在語法中有其他意義的符號
-\*literal asterisks\*
-
-## 表格
-[Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables)
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+## 打包專案 pack
+    npm pack
