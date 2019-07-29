@@ -120,8 +120,8 @@ __double underscores__
 ## 表格
 [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables)
 
-| A | B | C | D | E |
-|---|---|---|---|---|
-| 1 | 2 | 3 | 4 | 5 |
-| 1 | 2 | 3 | 4 | 5 |
-| 1 | 2 | 3 | 4 | 5 |
+| A   | B   | C   | D   | E   |
+| --- | --- | --- | --- | --- |
+| 1   | 2   | 3   | 4   | 5   |
+| 1   | 2   | 3   | 4   | 5   |
+| 1   | 2   | 3   | 4   | 5   |
