@@ -104,13 +104,13 @@ __double underscores__
 
 ## 圖片
 
-![Alt text](https://markdown.tw/images/208x128.png)
+![Alt text](./images/208x128.png)
 
 ![Alt text](https://markdown.tw/images/208x128.png "Optional title")
 
 ![Alt text][idImage]
 
-[idImage]:https://markdown.tw/images/208x128.png
+[idImage]:images/208x128.png
 
 ## 跳脫字元
 
